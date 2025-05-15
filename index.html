@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Brett Mitchell | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Hero Section (Video Background) -->
-  <section class="hero">
+  <!-- Fullscreen Background Video -->
+  <div class="video-container">
     <video autoplay muted loop id="bgVideo">
       <source src="assets/background.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
+  </div>
 
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="hero-content">
       <h1>Brett Mitchell</h1>
       <p>Aspiring Space-Focused Software Engineer | M.S. Computer Science</p>
@@ -22,27 +24,17 @@
     </div>
   </section>
 
-  <!-- Main Content (Black Background) -->
+  <!-- Content Section -->
   <div class="container">
     <h2>About Me</h2>
-    <p>I'm a Computer Science Master's student passionate about software systems for space technology, robotics, and AI. I’ve interned at NASA, helped build rover autonomy for the NASA SUITS Challenge, and developed a CubeSat flight software simulator to support mission-critical telemetry and fault handling.</p>
+    <p>I'm a Computer Science Master's student passionate about space software systems, robotics, and AI...</p>
 
     <h2>Projects</h2>
-
     <div class="project">
       <h3>CubeSat Flight Software Simulator</h3>
       <p>Simulated real-time telemetry, task scheduling, and fault detection for embedded satellite systems.</p>
-      <a href="https://github.com/bmitch26/cubesat-sim" target="_blank">GitHub</a> | 
-      <a href="#" target="_blank">Demo</a>
-    </div>
-
-    <div class="project">
-      <h3>NASA SUITS Challenge (Lunar Rover Interface)</h3>
-      <p>Developed backend logic and telemetry visualizations for rover autonomy and astronaut safety systems.</p>
-      <a href="https://github.com/bmitch26/nasa-suits" target="_blank">GitHub</a> | 
-      <a href="#" target="_blank">Demo</a>
+      <a href="#">GitHub</a> | <a href="#">Demo</a>
     </div>
   </div>
-
 </body>
 </html>

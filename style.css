@@ -1,4 +1,4 @@
-/* === Reset + Globals === */
+/* Reset and Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -10,51 +10,49 @@ body, html {
   color: white;
   background-color: black;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
-/* === Hero Section with Video === */
-.hero {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#bgVideo {
-  position: absolute;
+/* Background Video */
+.video-container {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   z-index: -1;
-  pointer-events: none;
+}
+#bgVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding-top: 20vh;
-  padding-bottom: 30vh;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
+  height: 100vh;
+  background: transparent;
 }
-
+.hero-content {
+  background: rgba(0, 0, 0, 0.4); /* Optional: add contrast over video */
+  padding: 2rem;
+  border-radius: 10px;
+}
 .hero-content h1 {
-  font-size: 3.5em;
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 0.5em;
+  margin-bottom: 1rem;
 }
-
 .hero-content p {
-  font-size: 1.3em;
-  opacity: 0.95;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
-
 .button {
   display: inline-block;
-  margin-top: 20px;
   padding: 12px 24px;
   background-color: #00b4ff;
   color: white;
@@ -67,36 +65,31 @@ body, html {
   background-color: #008ccf;
 }
 
-/* === Main Content Section === */
+/* Main Content */
 .container {
   background-color: black;
   padding: 60px 20px;
   max-width: 900px;
   margin: auto;
 }
-
 h2 {
   font-size: 2em;
   margin-bottom: 20px;
   border-bottom: 2px solid #00b4ff;
   padding-bottom: 10px;
 }
-
 p {
   font-size: 1.1em;
   line-height: 1.6;
   margin-bottom: 30px;
 }
-
 .project {
   margin-bottom: 40px;
 }
-
 .project h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
-
 a {
   color: #00b4ff;
   text-decoration: none;
