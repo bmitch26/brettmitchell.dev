@@ -31,8 +31,6 @@ body, html {
   object-fit: cover;
 }
 
-
-/* Hero Section */
 /* Hero Section */
 .hero {
   position: relative;
@@ -41,10 +39,12 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; /* Critical */
+  width: 100%;
   background: transparent;
   text-align: center;
 }
+
 
 .hero-content {
   background: rgba(0, 0, 0, 0.4); /* Optional: add contrast over video */
