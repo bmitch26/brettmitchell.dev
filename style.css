@@ -8,7 +8,7 @@ body, html {
   height: 100%;
   font-family: 'Segoe UI', sans-serif;
   color: white;
-  background-color: black;
+  background-color: transparent;
   scroll-behavior: smooth;
 }
 
